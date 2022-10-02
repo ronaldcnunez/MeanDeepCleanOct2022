@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+import { GiBroom } from "react-icons/gi"
 import { MdCleaningServices } from "react-icons/md";
 import {
   AiFillStar,
@@ -74,13 +75,13 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/booknow"
                 onClick={() => updateExpanded(false)}
               >
-                <MdCleaningServices
+                <GiBroom
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                Book Now
               </Nav.Link>
             </Nav.Item>
 

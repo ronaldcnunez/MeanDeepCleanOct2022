@@ -4,6 +4,8 @@ import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/Soumyajit_Behera-BIT_MESRA.pdf";
 import { BiMailSend } from "react-icons/bi";
+import { GiBroom } from "react-icons/gi";
+import { Link } from "react-router-dom";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { useForm, ValidationError } from '@formspree/react';
@@ -20,7 +22,9 @@ function ResumeNew() {
   let navigate = useNavigate();
 
 
-
+  const navigateBookNow = () => {
+    navigate('/booknow');
+  };
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -36,15 +40,12 @@ function ResumeNew() {
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          {/* <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
+          <Button onClick={navigateBookNow}
             style={{ maxWidth: "250px" }}
           >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button> */}
+            <GiBroom />
+            &nbsp; Pricing and Services  
+          </Button>
         </Row>
 
         <Row className="resume">
@@ -64,6 +65,7 @@ function ResumeNew() {
               <textarea class= "form-control" id="message" name="message" placeholder="Your Message *" required></textarea>
               <ValidationError prefix="Message" field="message" errors={state.errors} />
             <br/>
+
               <Button
                 exact path="/"
                 variant="primary"
@@ -74,6 +76,7 @@ function ResumeNew() {
                 <BiMailSend /> &nbsp;Submit
                 <ValidationError errors={state.errors} />
               </Button>
+
             </form>
           </Row>
       </Container>
