@@ -21,8 +21,8 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                Welcome to 
+                <strong className="main-name"> Mean Deep Clean</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -31,12 +31,13 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
+              {/* text below is for an image to the left of the welcome message on home page  */}
+              {/* <img
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
-              />
+              /> */}
             </Col>
           </Row>
         </Container>
@@ -47,3 +48,4 @@ function Home() {
 }
 
 export default Home;
+

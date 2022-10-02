@@ -1,6 +1,12 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
+import { SiFastly } from "react-icons/si";
+import { BsFillCalendarCheckFill } from "react-icons/bs";
+import { GiEarthAmerica } from "react-icons/gi";
+
+
+
 
 function AboutCard() {
   return (
@@ -8,30 +14,29 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />I am a junior pursuing IMSC in Maths and Computing in BIT
-            Mesra.
+             It's quite simple. <span className="purple"> Great cleaners  </span>
+              +  <span className="purple"> Great software</span>
+            <br />Come together to bring you the peace and mind you so righfully deserve.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            The cleaning company you've always dreamed of
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <BsFillCalendarCheckFill /> Same day and Next day service 
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writting Tech Blogs
+              <SiFastly />  Book an appointment within seconds  
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <GiEarthAmerica />  Organic, natural and eco-friendly options available 
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "A clean environment elevates a clear mind."{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Confucius</footer>
         </blockquote>
       </Card.Body>
     </Card>
@@ -39,3 +44,4 @@ function AboutCard() {
 }
 
 export default AboutCard;
+

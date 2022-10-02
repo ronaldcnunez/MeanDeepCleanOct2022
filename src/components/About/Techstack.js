@@ -14,39 +14,48 @@ import {
   SiFirebase,
   SiNextdotjs,
 } from "react-icons/si";
+import { FaViruses }  from "react-icons/fa";
+import { BsFillHouseDoorFill }  from "react-icons/bs";
+import { BiBuildingHouse, BiPackage }  from "react-icons/bi";
+import { GiFlood, GiPartyPopper, GiHomeGarage, GiWindow }  from "react-icons/gi";
+import { MdOutlinePets, MdOutlineLocalLaundryService, MdConstruction, MdCleaningServices}  from "react-icons/md";
+
+
+
+
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <BsFillHouseDoorFill />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <BiBuildingHouse />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <BiPackage />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <GiFlood />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <GiPartyPopper />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <MdOutlinePets />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <MdOutlineLocalLaundryService />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <MdConstruction />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <GiWindow />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPytorch />
+        <GiHomeGarage />
       </Col>
     </Row>
   );
