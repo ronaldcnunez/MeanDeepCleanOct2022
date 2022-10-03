@@ -15,13 +15,16 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Fast and Free <strong className="purple">Quotes! </strong> 
+
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Get an accurate quote in just seconds! 
+
+          
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
@@ -74,16 +77,17 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Booking system will be where the image is "
+              description="Book a quote in just seconds. All pricing is accurate and credit cards are not charged until after service is rendered"
+              fbLink="https://www.facebook.com/MeanDeepCleanNJ"
+              glink="https://www.google.com/maps/place//data=!4m2!3m1!1s0x89c2ff41b04625f9:0xf301455e8eddc046?source=g.page.share"
+
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
