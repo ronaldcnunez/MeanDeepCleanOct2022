@@ -1,13 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
-  AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
   AiFillFacebook,
   AiOutlineGoogle
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 import { FaTiktok } from 'react-icons/fa';
 
 

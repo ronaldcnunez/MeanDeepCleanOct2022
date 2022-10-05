@@ -155,7 +155,7 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
+  height: 2.5em !important;
   width: 2.5em !important;
 }
 
@@ -456,7 +456,9 @@ button:focus {
   padding-bottom: 50px !important;
   padding-left: 25px !important;
   padding-right: 25px !important;
-  height: auto !important;
+  position: relative;
+  height: auto;
+  min-height: 100% !important;
 }
 
 .project-card-view {
@@ -465,7 +467,11 @@ button:focus {
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
-  height: 100% !important;
+  /* height: 100% !important; */
+  position: relative;
+  height: auto;
+  min-height: 100% !important;
+
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;

@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
 import { SiFastly } from "react-icons/si";
 import { BsFillCalendarCheckFill } from "react-icons/bs";
 import { GiEarthAmerica } from "react-icons/gi";
@@ -16,7 +15,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
              It's quite simple. <span className="purple"> Great cleaners  </span>
               +  <span className="purple"> Great software</span>
-            <br />Come together to bring you the peace and mind you so righfully deserve.
+            <br />Come together to bring you the peace of mind you so righfully deserve.
             <br />
             <br />
             The cleaning company you've always dreamed of
