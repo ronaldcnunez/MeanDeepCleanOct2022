@@ -1,52 +1,41 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
+import React, { useState, useEffect } from "react";
+import { Container, Row } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import InnerHTML from 'dangerously-set-html-content'
+
+
+
+  const html = `
+  <script src="https://ronaldscleaningcompany.launch27.com/jsbundle"></script>
+  <iframe id="booking-widget-iframe" src="https://ronaldscleaningcompany.launch27.com/?w_cleaning" 
+  style="border:none;width:100%;min-height:450px;overflow:hidden" scrolling="yes">
+  </iframe>
+
+`
+
+
 
 function Projects() {
+  const [width, setWidth] = useState(700);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
+
   return (
-    <Container fluid className="project-section">
-      <Particle />
-      <Container>
-        <h1 className="project-heading">
-          Fast and Free <strong className="purple">Quotes! </strong> 
-
-        </h1>
-        <p style={{ color: "white" }}>
-          Get an accurate quote in just seconds! 
-
-          
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card" 
-            style={{ 
-                width:'80%',
-                display: 'block',
-                overflow: 'auto'
-            }} >
-            <ProjectCard
-              title="Booking system will be where the image is "
-              description="Book a quote in just seconds. All pricing is accurate and credit cards are not charged until after service is rendered"
-              fbLink="https://www.facebook.com/MeanDeepCleanNJ"
-              glink="https://www.google.com/maps/place//data=!4m2!3m1!1s0x89c2ff41b04625f9:0xf301455e8eddc046?source=g.page.share"
-            />
-
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col> */}
-
-          </Col>
+    <div>
+      <Container fluid className="resume-section">
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+          </Row>
+            <Row className="resume">
+              <InnerHTML html={html}/>        
+            </Row>
+          <Row style={{ justifyContent: "center", position: "relative" }}>
         </Row>
       </Container>
-    </Container>
+    </div>
   );
 }
-
 export default Projects;
