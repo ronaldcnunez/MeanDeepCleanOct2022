@@ -8,7 +8,6 @@ import Toolstack from "./Toolstack";
 function About() {
   return (
     <Container fluid className="about-section">
-      <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
@@ -27,10 +26,7 @@ function About() {
           <Col
             md={5}
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            {/* this is to add an image nexst to the paragraph in the about page */}
-            {/* <img src={laptopImg} alt="about" className="img-fluid" /> */}
+            className="about-img" >
           </Col>
         </Row>
         <h1 className="project-heading">

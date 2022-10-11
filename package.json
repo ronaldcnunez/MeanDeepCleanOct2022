@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.4.0",
+    "@popperjs/core": "^2.11.6",
     "@react-pdf/renderer": "^2.2.0",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",

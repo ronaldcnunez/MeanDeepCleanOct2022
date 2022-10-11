@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import InnerHTML from 'dangerously-set-html-content'
 
