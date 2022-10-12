@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Particle from "../Particle";
 import { Container, Row } from "react-bootstrap";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import InnerHTML from 'dangerously-set-html-content'
@@ -24,6 +25,8 @@ function Projects() {
 
   return (
     <div>
+              <Particle/>
+
       <Container fluid className="resume-section">
         <Row style={{ justifyContent: "center", position: "relative" }}>
           </Row>

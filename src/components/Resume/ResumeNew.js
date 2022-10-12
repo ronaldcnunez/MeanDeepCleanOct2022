@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row,Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import { BiMailSend } from "react-icons/bi";
@@ -7,6 +7,7 @@ import { GiBroom } from "react-icons/gi";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { useForm, ValidationError } from '@formspree/react';
 import { useNavigate } from "react-router-dom";
+import homeLogo from "../../Assets/logo.png";
 
 
 
@@ -34,19 +35,21 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button onClick={navigateBookNow}
+
+        <Row className="resume">
+          
+            <form  
+              style={{ maxWidth: "500px", justifyContent: "center", position: "relative"}} 
+              method="POST" onSubmit={handleSubmit}>
+                <Button onClick={navigateBookNow}
             style={{ maxWidth: "250px" }}
           >
             <GiBroom />
             &nbsp; Pricing and Services  
           </Button>
-        </Row>
+          <br/>
+          <br/>
 
-        <Row className="resume">
-            <form  
-              style={{ maxWidth: "500px", justifyContent: "center", position: "relative"}} 
-              method="POST" onSubmit={handleSubmit}>
               <label htmlFor="name">Full Name</label>
               <input class= "form-control" id="name" type="text" name="name" placeholder="Your Name *" required />
               <ValidationError prefix="Name" field="name" errors={state.errors} />
@@ -73,6 +76,17 @@ function ResumeNew() {
               </Button>
 
             </form>
+
+            <Col md={5} style={{ paddingBottom: 20 }}>
+              <img
+                src={homeLogo}
+                alt="home pic"
+                className="img-fluid"
+                style={{ maxHeight: "450px" }}
+              />
+            </Col>
+
+            
           </Row>
       </Container>
     </div>
