@@ -1,5 +1,7 @@
-import React from "react";
-import { Col, Row } from "react-bootstrap";
+import React, { useState } from "react";
+import { Col, Row, Nav, NavLink } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { BsFillHouseDoorFill }  from "react-icons/bs";
 import { BiBuildingHouse, BiPackage }  from "react-icons/bi";
 import { GiFlood, GiPartyPopper, GiHomeGarage, GiWindow }  from "react-icons/gi";
@@ -109,17 +111,20 @@ const popoverMdConstruction = (
   </Popover>
 );
 
-
-
-
 function Techstack() {
+  const navigate = useNavigate();
+
+    function handleClick(path) {
+      navigate(path);
+    }
 
   return (
+    
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
 
       <OverlayTrigger  placement="top" overlay={popoverBsFillHouseDoorFill}>
-        <Col xs={4} md={2} className="tech-icons">
-          <BsFillHouseDoorFill />
+        <Col xs={4} md={2} className="tech-icons" onClick={() => handleClick("/residentialcleaning")} >
+          <BsFillHouseDoorFill/>
         </Col>
       </OverlayTrigger>
 
@@ -178,14 +183,6 @@ function Techstack() {
         <GiHomeGarage />
         </Col>
       </ OverlayTrigger>
-
-
-
-
-
-
-
-
 
     </Row>
   );

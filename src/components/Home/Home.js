@@ -53,14 +53,6 @@ function Home() {
                 position:'relative'
               }} />
 
-
-              {/* text below is for an image to the left of the welcome message on home page  */}
-              {/* <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              /> */}
             </Col>
           </Row>
         </Container>

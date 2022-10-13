@@ -14,7 +14,7 @@ import InnerHTML from 'dangerously-set-html-content'
 
 `
 
-function Projects() {
+function Residential() {
   return (
     <div>
       <Particle/>
@@ -30,4 +30,4 @@ function Projects() {
     </div>
   );
 }
-export default Projects;
+export default Residential;

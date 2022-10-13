@@ -40,8 +40,6 @@ function About() {
           <strong className="purple">Current</strong> Clients
         </h1>
         <Toolstack />
-
-        {/* <Github /> */}
       </Container>
     </Container>
   );
