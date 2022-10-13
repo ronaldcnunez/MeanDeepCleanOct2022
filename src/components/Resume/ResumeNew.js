@@ -7,7 +7,7 @@ import { GiBroom } from "react-icons/gi";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { useForm, ValidationError } from '@formspree/react';
 import { useNavigate } from "react-router-dom";
-import homeLogo from "../../Assets/logo.png";
+import homeLogo from "../../Assets/logo2.png";
 
 
 
