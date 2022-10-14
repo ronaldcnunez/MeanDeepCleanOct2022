@@ -1,16 +1,23 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Particle from "../Particle";
 import {
   AiFillInstagram,
   AiFillFacebook,
   AiOutlineGoogle
 } from "react-icons/ai";
-import { FaTiktok } from 'react-icons/fa';
+import { FaTiktok, FaReceipt } from 'react-icons/fa';
 import Typewriter from "typewriter-effect";
+import { useNavigate } from "react-router-dom";
 
 
 function PartyServices() {
+  let navigate = useNavigate();
+
+  const navigateBookNow = () => {
+    navigate('/booknow');
+  };
+
     return (
       <section>
         <Container fluid className="home-section" id="home">
@@ -19,26 +26,26 @@ function PartyServices() {
             <Row>
               <Col md={7} className="home-header">
                 <h1 style={{ paddingBottom: 15 }} className="heading">
-                  Hi There!{" "}
+                  Party Season is upon us!{" "}
                   <span className="wave" role="img" aria-labelledby="wave">
-                  🐕  🐈  🦜  🐇
+                  🎉 🎊 🍾
                   </span>
                 </h1>
                 <h1 className="heading-name">
                   Mean Deep Clean's
                 </h1>
                 <h1 className="heading-name">
-                  <strong className="main-name"> Cleaning for Pet owners</strong>
+                  <strong className="main-name"> Party Clean up </strong>
                 </h1>
                 <div style={{ padding: 50, textAlign: "left" }}>
                   <Typewriter 
                   options={{ 
                     strings: [
-                      "Dogs",
-                      "Cats",
-                      "Birds",
-                      "Reptiles",
-                      "Rabbits"
+                      "Holiday Parties",
+                      "Birthdays",
+                      "Graduations",
+                      "Engagement Parties",
+                      "Baby Showers"
                     ],
                     autoStart: true,
                     loop: true,
@@ -54,30 +61,23 @@ function PartyServices() {
           <Row>
             <Col md={8} className="home-about-description">
               <h1 style={{ fontSize: "2.6em" }}>
-                Getting to know  <span className="purple"> Mean Deep Clean </span>
+                Party with  <span className="purple"> Mean Deep Clean </span>
               </h1>
               <p className="home-about-body">
-                Do you turn away guests because you are embarrassed by the odor and mess that is caused by your    
-                <b className="purple"> {" "} pets</b>?
-               You aren't alone. Many 
-                <b className="purple"> {" "} Pet Owners </b>
-                are not thrilled with the idea of inviting people over because of the 
-                <b className="purple"> {" "} mess and smell </b>
-                their furry loved ones leave behind. 
-  
+                What's the best part of hosting an event at your house? <b className="purple"> {" "} Cleaning</b>{" "}
+                up the following morning... <b className="purple"> {" "} Said no one ever. </b>
+                Want to impress guests with a <b className="purple"> {" "} Spotless Home</b>?{" "}
+                <b className="purple"> {" "} Mean Deep Clean </b>{" "} is here to help! 
                 <br/> 
-                <b className="purple"> {" "} Our professionals </b>
-                   make sure your home is free of pet hair and odor.
-                They systematically review the space, develop a strategy to perform the job and waste no time in 
-                <b className="purple"> {" "} removing dirt, sanitizing, vacuuming, Swiffering and cleaning </b>
-                areas that our 
-                <b className="purple"> {" "} furry loved ones  </b>              
-                hide in.
+                <br/> 
+                <b className="purple"> {" "}Plan your party </b> let us take care of the <b className="purple"> {" "}cleaning.</b>{" "}
+                Book your appointment one day in advance and as the famous infomercial said <b className="purple"> {" "}Set it and Forget it! </b>
+                  Our team of professionals will <b className="purple"> {" "}deep clean </b>{" "} your home to ensure you can back to your routine.
                 <br />
                 <br /> 
-                Every regular cleaning includes {" "} 
+                Our Party clean up  includes a deep cleaning of the  {" "} 
                 <b className="purple">
-                  bathrooms, kitchen, common room and bedrooms. 
+                  bathrooms, kitchen, common areas and bedrooms &amp; dishes  
                 </b>  
                 {" "} We also bring all  
                 <b className="purple"> {" "}
@@ -86,32 +86,26 @@ function PartyServices() {
                 {" "}and will use yours if requested.
                 <i>  
                 <br />
-                <br /> 
-                All our standard cleanings include {" "} 
-                <b className="purple"> dusting  </b>{" "} &amp;              
-                <b className="purple"> {" "} washing </b>of all reachable surfaces, 
-                <b className="purple"> {" "} wiping </b>the exterior of all kitchen appliances &amp;  
-                <b className="purple"> {" "} cabinets </b>. 
-                <b className="purple"> cleaning  </b>of the bathrooms {" "}&amp;    
-                <b className="purple"> {" "} vacuuming</b> {" "}&amp;
-                <b className="purple"> {" "} Swiffering </b>of all floors.
-                <br/>
-                <br/>
                 <br/>
                 <b className="purple">
-                  Pet cleanings 
+                  Post Party cleanings 
                   </b>
-                  {" "} are an add on to any  {" "}
+                  {" "} are a standalone   {" "}
                   <b className="purple">
-                  Standard   
+                  Service   
                   </b>
-                  {" "} or {" "}
+                  {" "} and {" "}
                   <b className="purple">
-                  Deep Clean  
+                  is a thorough deep clean to your home or event space.
                   </b>
-                  {" "} appointment. {" "}
                 </i>
               </p>
+              <br/>
+              <br/>
+              <Button onClick={navigateBookNow} style={{ width: "500px" }} >
+              <FaReceipt />
+                &nbsp; Free Estimate  
+            </Button>
             </Col>
           </Row>
           <Row>
