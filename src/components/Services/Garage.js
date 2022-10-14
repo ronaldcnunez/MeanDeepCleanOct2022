@@ -52,7 +52,7 @@ function GarageServices() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 style={{ fontSize: "3.6em" }}>
               Getting to know  <span className="purple"> Mean Deep Clean </span>
             </h1>
             <p className="home-about-body">

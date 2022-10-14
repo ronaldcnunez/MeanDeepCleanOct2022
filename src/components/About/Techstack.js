@@ -22,7 +22,7 @@ const popoverBsFillHouseDoorFill = (
 
 const popoverBiBuildingHouse = (
   <Popover id="popover-basic">
-    <Popover.Header as="h3">Commerical Cleaning </Popover.Header>
+    <Popover.Header as="h3">Commercial Cleaning </Popover.Header>
     <Popover.Body>
       Office cleanings that meet your budget and exceed your needs.
     </Popover.Body>

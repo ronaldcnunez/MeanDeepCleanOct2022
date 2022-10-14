@@ -1,16 +1,23 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Particle from "../Particle";
 import {
   AiFillInstagram,
   AiFillFacebook,
   AiOutlineGoogle
 } from "react-icons/ai";
-import { FaTiktok } from 'react-icons/fa';
+import { FaTiktok, FaReceipt } from 'react-icons/fa';
 import Typewriter from "typewriter-effect";
+import { useNavigate } from "react-router-dom";
+
 
 
 function LaundryServices() {
+  let navigate = useNavigate();
+
+  const navigateBookNow = () => {
+    navigate('/booknow');
+  };
 
   return (
     <section>
@@ -20,24 +27,24 @@ function LaundryServices() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
+                Laundry: America's Least favorite task{" "}
+                <span  role="img" >
+                  🧺 👔 👚
                 </span>
               </h1>
               <h1 className="heading-name">
                 Mean Deep Clean's
               </h1>
               <h1 className="heading-name">
-                <strong className="main-name"> Residential Cleaning</strong>
+                <strong className="main-name"> Laundry Services</strong>  are here to help! 
               </h1>
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Typewriter 
                 options={{ 
                   strings: [
-                    "Houses",
-                    "Apartments",
-                    "Condos",
+                    "Washing",
+                    "Drying",
+                    "Folding",
                   ],
                   autoStart: true,
                   loop: true,
@@ -52,58 +59,37 @@ function LaundryServices() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              Getting to know  <span className="purple"> Mean Deep Clean </span>
+            <h1 style={{ fontSize: "3.6em" }}>
+            <span className="purple"> Mean Deep Clean </span> your laundry! 
             </h1>
             <p className="home-about-body">
-              If you dream of walking into an immaculate home without taking the time or effort of cleaning it, 
+              Tired of spending nights and weekends doing laundry?  
               <b className="purple"> {" "} Mean Deep Clean </b>
-              is ready to help. With our regular cleaning service, we provide you with an outstanding cleaning job at an 
-              <b className="purple"> {" "} affordable price. </b>
-              Our dedicated cleaners are 
-              <b className="purple"> {" "} true professionals </b>
-                and make sure your home is transformed into a spotless place. 
-              They systematically review the space, develop a strategy to perform the job and waste no time in 
-              <b className="purple"> {" "} removing dirt, sanitizing, vacuuming, Swiffering and cleaning </b>
-               areas that never receive attention.  
-              <br />
-              <br /> 
-              Every regular cleaning includes {" "} 
-              <b className="purple">
-                bathrooms, kitchen, common room and bedrooms. 
-              </b>  
-              {" "} We also bring all  
-              <b className="purple"> {" "}
-                cleaning supplies
-              </b>  
-              {" "}and will use yours if requested.
-              <i>  
-              <br />
-              <br /> 
-              All our standard cleanings include {" "} 
-              <b className="purple"> dusting  </b>{" "} &amp;              
-              <b className="purple"> {" "} washing </b>of all reachable surfaces, 
-              <b className="purple"> {" "} wiping </b>the exterior of all kitchen appliances &amp;  
-              <b className="purple"> {" "} cabinets </b>. 
-              <b className="purple"> cleaning  </b>of the bathrooms {" "}&amp;    
-              <b className="purple"> {" "} vacuuming</b> {" "}&amp;
-              <b className="purple"> {" "} Swiffering </b>of all floors.
-              <br/>
+              is ready to help. We offer laundry services that help you check even more items off your to-do list. 
+              We will deliver a 
+              <b className="purple"> {" "} clean </b> home, 
+              <b className="purple"> {" "} fresh laundry </b>, and more time to focus on the 
+              <b className="purple"> {" "} important </b> things in life.
               <br/>
               <br/>
               <b className="purple">
-                Deep cleans 
+                Laundry 
                 </b>
-                {" "} are also available and {" "}
+                {" "} is an add-on to any  {" "}
                 <b className="purple">
-                recommended  
+                Standard   
                 </b>
-                {" "} for {" "}
+                {" "} or {" "}
                 <b className="purple">
-                first time services  
+                Deep Clean  
                 </b>
-                {" "} services. {" "}
-              </i>
+                {" "} appointment. {" "}
+                <br/>
+                <br/>
+            <Button onClick={navigateBookNow} style={{ width: "500px" }} >
+              <FaReceipt />
+                &nbsp; Free Estimate  
+            </Button>
             </p>
           </Col>
         </Row>

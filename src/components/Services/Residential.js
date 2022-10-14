@@ -1,16 +1,22 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Particle from "../Particle";
 import {
   AiFillInstagram,
   AiFillFacebook,
   AiOutlineGoogle
 } from "react-icons/ai";
-import { FaTiktok } from 'react-icons/fa';
+import { FaTiktok, FaReceipt } from 'react-icons/fa';
 import Typewriter from "typewriter-effect";
+import { useNavigate } from "react-router-dom";
 
 
 function ResidentialServices() {
+  let navigate = useNavigate();
+
+  const navigateBookNow = () => {
+    navigate('/booknow');
+  };
 
   return (
     <section>
@@ -104,6 +110,10 @@ function ResidentialServices() {
                 </b>
                 {" "} services. {" "}
               </i>
+              <Button onClick={navigateBookNow} style={{ width: "500px" }} >
+              <FaReceipt />
+                &nbsp; Free Estimate  
+            </Button>
             </p>
           </Col>
         </Row>
