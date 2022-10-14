@@ -10,16 +10,7 @@ import { FaTiktok } from 'react-icons/fa';
 import Typewriter from "typewriter-effect";
 
 
-
-function Home() {
-  const html = `
-  <div> 
-  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-  <div class="elfsight-app-77aa2f63-fc92-4d64-b9de-1b0ca1464ef9"></div>
-  </div>  `
-
-
-
+function GarageServices() {
 
   return (
     <section>
@@ -34,34 +25,27 @@ function Home() {
                   👋🏻
                 </span>
               </h1>
-
               <h1 className="heading-name">
-                Welcome to 
-                <strong className="main-name"> Mean Deep Clean</strong>
+                Mean Deep Clean's
               </h1>
-
+              <h1 className="heading-name">
+                <strong className="main-name"> Residential Cleaning</strong>
+              </h1>
               <div style={{ padding: 50, textAlign: "left" }}>
-              <Typewriter
-      options={{
-        strings: [
-          "NJ's & NYC's #1 cleaning company",
-          "Over 39 years of experience",
-          "Same day and next day service available",
-          "Fully licensed, insured and bonded",
-          "Open 7 days a week",
-        ],
-        autoStart: true,
-        loop: true,
-        deleteSpeed: 100,
-      }}
-    />              </div>
+                <Typewriter 
+                options={{ 
+                  strings: [
+                    "Houses",
+                    "Apartments",
+                    "Condos",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 100,
+                }}/>              
+              </div>
             </Col>
-
-            <Col md={5} style={{ paddingBottom: 20 }}>
-            <br/>           
-
-            </Col>
-          </Row>
+            </Row>
         </Container>
       </Container>
       <Container fluid className="home-about-section" id="about">
@@ -72,64 +56,55 @@ function Home() {
               Getting to know  <span className="purple"> Mean Deep Clean </span>
             </h1>
             <p className="home-about-body">
-              Mean Deep Clean uses cutting edge technologies to improve customer experience. Say goodbye to the days of calling in a cleaning service and waiting for them to come by to give you an estimate.  
+              If you dream of walking into an immaculate home without taking the time or effort of cleaning it, 
+              <b className="purple"> {" "} Mean Deep Clean </b>
+              is ready to help. With our regular cleaning service, we provide you with an outstanding cleaning job at an 
+              <b className="purple"> {" "} affordable price. </b>
+              Our dedicated cleaners are 
+              <b className="purple"> {" "} true professionals </b>
+                and make sure your home is transformed into a spotless place. 
+              They systematically review the space, develop a strategy to perform the job and waste no time in 
+              <b className="purple"> {" "} removing dirt, sanitizing, vacuuming, Swiffering and cleaning </b>
+               areas that never receive attention.  
               <br />
-            <br /> 
-                Mean Deep Clean offers clients &nbsp;
-              <i>
-                <b className="purple">Transparent pricing </b>, {" "}
-
-                <b className="purple">
-                Online booking
+              <br /> 
+              Every regular cleaning includes {" "} 
+              <b className="purple">
+                bathrooms, kitchen, common room and bedrooms. 
+              </b>  
+              {" "} We also bring all  
+              <b className="purple"> {" "}
+                cleaning supplies
+              </b>  
+              {" "}and will use yours if requested.
+              <i>  
+              <br />
+              <br /> 
+              All our standard cleanings include {" "} 
+              <b className="purple"> dusting  </b>{" "} &amp;              
+              <b className="purple"> {" "} washing </b>of all reachable surfaces, 
+              <b className="purple"> {" "} wiping </b>the exterior of all kitchen appliances &amp;  
+              <b className="purple"> {" "} cabinets </b>. 
+              <b className="purple"> cleaning  </b>of the bathrooms {" "}&amp;    
+              <b className="purple"> {" "} vacuuming</b> {" "}&amp;
+              <b className="purple"> {" "} Swiffering </b>of all floors.
+              <br/>
+              <br/>
+              <br/>
+              <b className="purple">
+                Deep cleans 
                 </b>
-                {" "} and {" "}
+                {" "} are also available and {" "}
                 <b className="purple">
-                appointment mangement system 
+                recommended  
                 </b>
-                {" "} and also {" "}
+                {" "} for {" "}
                 <b className="purple">
-                A staff with over 39 years of experience
+                first time services  
                 </b>
-              </i>
-              <br />  
-              <br />  Our most requested services are  
-              <br />
-              <i>
-                <b className="purple"> Deep Cleanings </b>
-              </i>
-              <br />
-              <i>
-                <b className="purple"> Move-in and Move-out cleanings</b>
-              </i>
-              <br />
-              <i>
-                <b className="purple"> Construction / Renovation clean up </b>
-              </i>
-              <br />
-              <br />
-              Appointments are available   &nbsp;
-              <i>
-                <b className="purple">Seven days a week </b> with discounts for{" "}
-                <b className="purple">
-                   recurring services
-                </b>
-              </i>
-              <br />
-              <br />
-              We are here to facilitate all your <b className="purple">residential</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  commercial cleaning needs
-                </b>
+                {" "} services. {" "}
               </i>
             </p>
-          </Col>
-          <Col md={4} className="myAvtar">
-            {/* this is for the image on the bottom portion of the home page  */}
-            {/* <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt> */}
           </Col>
         </Row>
         <Row>
@@ -188,4 +163,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default GarageServices;

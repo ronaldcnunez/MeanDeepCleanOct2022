@@ -129,19 +129,19 @@ function Techstack() {
       </OverlayTrigger>
 
       <OverlayTrigger  placement="top" overlay={popoverBiBuildingHouse}>
-        <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons" onClick={() => handleClick("/commercial")}>
           <BiBuildingHouse />
         </Col>
       </OverlayTrigger>
 
       <OverlayTrigger  placement="top" overlay={popoverBiPackage}>
-        <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons" onClick={() => handleClick("/MoveIn")} >
           <BiPackage />
         </Col>
       </ OverlayTrigger>
 
       <OverlayTrigger  placement="top" overlay={popoverGiFlood}>
-        <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons" onClick={() => handleClick("/floodcleaning")} >
         <GiFlood />
         </Col>
       </ OverlayTrigger>
@@ -149,37 +149,37 @@ function Techstack() {
 
 
       <OverlayTrigger  placement="top" overlay={popoverGiPartyPopper}>
-        <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons" onClick={() => handleClick("/partycleanup")} >
         <GiPartyPopper />
         </Col>
       </ OverlayTrigger>
 
       <OverlayTrigger  placement="bottom" overlay={popoverMdOutlinePets}>
-        <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons" onClick={() => handleClick("/petcleanings")} >
         <MdOutlinePets />
         </Col>
       </ OverlayTrigger>
 
       <OverlayTrigger  placement="bottom" overlay={popoverMdOutlineLocalLaundryService}>
-        <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons" onClick={() => handleClick("/laundryservices")} >
         <MdOutlineLocalLaundryService />
         </Col>
       </ OverlayTrigger>
 
       <OverlayTrigger  placement="bottom" overlay={popoverMdConstruction}>
-        <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons" onClick={() => handleClick("/postconstruction")} >
         <MdConstruction />
         </Col>
       </ OverlayTrigger>
 
       <OverlayTrigger  placement="bottom" overlay={popoverGiWindow}>
-        <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons" onClick={() => handleClick("/cabinetcleanings")} >
         <GiWindow />
         </Col>
       </ OverlayTrigger>
 
       <OverlayTrigger  placement="bottom" overlay={popoverGiHomeGarage}>
-        <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons" onClick={() => handleClick("/garagecleaning")} >
         <GiHomeGarage />
         </Col>
       </ OverlayTrigger>
