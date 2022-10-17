@@ -20,24 +20,24 @@ function FloodedServices() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
+                Oh No!{" "}
+                <span className="wave" role="img" aria-labelledby="wave"> 🌊</span><span role="img" >🏘️</span>   
+                
+
               </h1>
               <h1 className="heading-name">
                 Mean Deep Clean's
               </h1>
               <h1 className="heading-name">
-                <strong className="main-name"> Residential Cleaning</strong>
+                <strong className="main-name"> Flood Services</strong>
               </h1>
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Typewriter 
                 options={{ 
                   strings: [
-                    "Houses",
-                    "Apartments",
-                    "Condos",
+                    "Basements",
+                    "Garage",
+                    "Crawl Space ",
                   ],
                   autoStart: true,
                   loop: true,
@@ -53,57 +53,22 @@ function FloodedServices() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              Getting to know  <span className="purple"> Mean Deep Clean </span>
+              Mean Deep Clean  <span className="purple"> Rapid Response Team </span>
             </h1>
             <p className="home-about-body">
-              If you dream of walking into an immaculate home without taking the time or effort of cleaning it, 
+              Did you walk into your basement to find a pool of murky water?  
               <b className="purple"> {" "} Mean Deep Clean </b>
-              is ready to help. With our regular cleaning service, we provide you with an outstanding cleaning job at an 
-              <b className="purple"> {" "} affordable price. </b>
-              Our dedicated cleaners are 
-              <b className="purple"> {" "} true professionals </b>
-                and make sure your home is transformed into a spotless place. 
-              They systematically review the space, develop a strategy to perform the job and waste no time in 
-              <b className="purple"> {" "} removing dirt, sanitizing, vacuuming, Swiffering and cleaning </b>
-               areas that never receive attention.  
+              is ready to help. With our rapid response team available 
+             <b className="purple"> {" "} 24/7 365 days a year </b> you can expect an immediate response. 
               <br />
               <br /> 
-              Every regular cleaning includes {" "} 
-              <b className="purple">
-                bathrooms, kitchen, common room and bedrooms. 
-              </b>  
-              {" "} We also bring all  
-              <b className="purple"> {" "}
-                cleaning supplies
-              </b>  
-              {" "}and will use yours if requested.
-              <i>  
+              Our dedicated cleaners are <b className="purple"> {" "} true professionals </b>
+              who will come in assess the situation and get right to work.
+              First they <b className="purple"> {" "} remove the water </b> that can cause damage to both your home and your<b className="purple"> {" "} family's health </b>
+              then our cleaners will begin a <b className="purple"> {" "}deep clean</b> of the area to eliminate any 
+              <b className="purple"> {" "}germs, mold and mildew.</b>             
               <br />
               <br /> 
-              All our standard cleanings include {" "} 
-              <b className="purple"> dusting  </b>{" "} &amp;              
-              <b className="purple"> {" "} washing </b>of all reachable surfaces, 
-              <b className="purple"> {" "} wiping </b>the exterior of all kitchen appliances &amp;  
-              <b className="purple"> {" "} cabinets </b>. 
-              <b className="purple"> cleaning  </b>of the bathrooms {" "}&amp;    
-              <b className="purple"> {" "} vacuuming</b> {" "}&amp;
-              <b className="purple"> {" "} Swiffering </b>of all floors.
-              <br/>
-              <br/>
-              <br/>
-              <b className="purple">
-                Deep cleans 
-                </b>
-                {" "} are also available and {" "}
-                <b className="purple">
-                recommended  
-                </b>
-                {" "} for {" "}
-                <b className="purple">
-                first time services  
-                </b>
-                {" "} services. {" "}
-              </i>
             </p>
           </Col>
         </Row>

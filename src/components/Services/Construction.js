@@ -29,7 +29,7 @@ function ConstructionServices() {
                 Mean Deep Clean's
               </h1>
               <h1 className="heading-name">
-                <strong className="main-name"> Residential Cleaning</strong>
+                <strong className="main-name"> Post Construction Cleaning</strong>
               </h1>
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Typewriter 
@@ -56,55 +56,17 @@ function ConstructionServices() {
               Getting to know  <span className="purple"> Mean Deep Clean </span>
             </h1>
             <p className="home-about-body">
-              If you dream of walking into an immaculate home without taking the time or effort of cleaning it, 
-              <b className="purple"> {" "} Mean Deep Clean </b>
-              is ready to help. With our regular cleaning service, we provide you with an outstanding cleaning job at an 
-              <b className="purple"> {" "} affordable price. </b>
-              Our dedicated cleaners are 
-              <b className="purple"> {" "} true professionals </b>
-                and make sure your home is transformed into a spotless place. 
-              They systematically review the space, develop a strategy to perform the job and waste no time in 
-              <b className="purple"> {" "} removing dirt, sanitizing, vacuuming, Swiffering and cleaning </b>
-               areas that never receive attention.  
-              <br />
-              <br /> 
-              Every regular cleaning includes {" "} 
-              <b className="purple">
-                bathrooms, kitchen, common room and bedrooms. 
-              </b>  
-              {" "} We also bring all  
-              <b className="purple"> {" "}
-                cleaning supplies
-              </b>  
-              {" "}and will use yours if requested.
-              <i>  
-              <br />
-              <br /> 
-              All our standard cleanings include {" "} 
-              <b className="purple"> dusting  </b>{" "} &amp;              
-              <b className="purple"> {" "} washing </b>of all reachable surfaces, 
-              <b className="purple"> {" "} wiping </b>the exterior of all kitchen appliances &amp;  
-              <b className="purple"> {" "} cabinets </b>. 
-              <b className="purple"> cleaning  </b>of the bathrooms {" "}&amp;    
-              <b className="purple"> {" "} vacuuming</b> {" "}&amp;
-              <b className="purple"> {" "} Swiffering </b>of all floors.
-              <br/>
-              <br/>
-              <br/>
-              <b className="purple">
-                Deep cleans 
-                </b>
-                {" "} are also available and {" "}
-                <b className="purple">
-                recommended  
-                </b>
-                {" "} for {" "}
-                <b className="purple">
-                first time services  
-                </b>
-                {" "} services. {" "}
-              </i>
-            </p>
+            <b className="purple"> {" "} Post-construction cleaning</b>
+             refers to the cleaning that is undertaken right after a construction project is finally completed.
+            No construction project is 
+            <b className="purple"> {" "} fully complete</b>
+            until the post-construction cleaning is completed because the construction project may not look the best without the cleaning fully done.  
+            <br/>
+            <br/>
+            No one wants to receive a home that is dirty and nasty after construction work is done because now you have to do even more work after you move into the your home. 
+             
+            <b className="purple"> {" "} Mean Deep Clean </b>
+              is NJ's and NYC's most trusted post construction cleaning. With over<b className="purple"> {" "} 700 post construction cleanings </b> we have the experience and staff needed.             </p>
           </Col>
         </Row>
         <Row>
