@@ -26,26 +26,25 @@ function MovingServices() {
             <Row>
               <Col md={7} className="home-header">
                 <h1 style={{ paddingBottom: 15 }} className="heading">
-                  Move-in Move-out Cleanings{" "}
+                  Moving on up!{" "}
                   <span className="wave" role="img" aria-labelledby="wave">
-                  🎉 🎊 🍾
+                  🏠 📦
                   </span>
-                </h1>
+                </h1> 
                 <h1 className="heading-name">
                   Mean Deep Clean's
                 </h1>
                 <h1 className="heading-name">
-                  <strong className="main-name"> Move-in Move-out  </strong>
+                  <strong className="main-name">Move-in Move-out</strong>
                 </h1>
                 <div style={{ padding: 50, textAlign: "left" }}>
                   <Typewriter 
                   options={{ 
                     strings: [
-                      "Holiday Parties",
-                      "Birthdays",
-                      "Graduations",
-                      "Engagement Parties",
-                      "Baby Showers"
+                      "Same day",
+                      "Next Day",
+                      "Move-in",
+                      "Move-out"
                     ],
                     autoStart: true,
                     loop: true,
@@ -61,47 +60,20 @@ function MovingServices() {
           <Row>
             <Col md={8} className="home-about-description">
               <h1 style={{ fontSize: "2.6em" }}>
-                Party with  <span className="purple"> Mean Deep Clean </span>
+                Mean Deep Clean's  <span className="purple"> Moving cleanings </span>
               </h1>
               <p className="home-about-body">
-                What's the best part of hosting an event at your house? <b className="purple"> {" "} Cleaning</b>{" "}
-                up the following morning... <b className="purple"> {" "} Said no one ever. </b>
-                Want to impress guests with a <b className="purple"> {" "} Spotless Home</b>?{" "}
-                <b className="purple"> {" "} Mean Deep Clean </b>{" "} is here to help! 
-                <br/> 
-                <br/> 
-                <b className="purple"> {" "}Plan your party </b> let us take care of the <b className="purple"> {" "}cleaning.</b>{" "}
-                Book your appointment one day in advance and as the famous infomercial said <b className="purple"> {" "}Set it and Forget it! </b>
-                  Our team of professionals will <b className="purple"> {" "}deep clean </b>{" "} your home to ensure you can back to your routine.
-                <br />
-                <br /> 
-                Our Party clean up  includes a deep cleaning of the  {" "} 
-                <b className="purple">
-                  bathrooms, kitchen, common areas and bedrooms &amp; dishes  
-                </b>  
-                {" "} We also bring all  
-                <b className="purple"> {" "}
-                  cleaning supplies
-                </b>  
-                {" "}and will use yours if requested.
-                <i>  
-                <br />
-                <br/>
-                <b className="purple">
-                  Post Party cleanings 
-                  </b>
-                  {" "} are a standalone   {" "}
-                  <b className="purple">
-                  Service   
-                  </b>
-                  {" "} and {" "}
-                  <b className="purple">
-                  is a thorough deep clean to your home or event space.
-                  </b>
-                </i>
+              When you move into a new home, you’ve probably seen it at its best and missed all those little corners that were <b className="purple"> {" "} dirty, dusty, moldy or stained.</b>{" "} 
+              We make sure all those corners are <b className="purple"> {" "}clean and hygienic.</b>{" "}  You don’t need any unpleasant surprises that first day and night in your new abode. 
+              <br/>
+              <br/>
+              Sometimes we forget after living years or even just a matter of months in a  <b className="purple"> {" "} house or apartment</b>{" "} that dirt and debris have piled up while you ignored it or kept putting it off.
+              If you don’t get the  <b className="purple"> {" "} old place</b>{" "} cleaned adequately, you are likely to get complaints and possibly have to do it again. 
+              If you are a  <b className="purple"> {" "} renter</b>{" "}, you could lose that  <b className="purple"> {" "} deposit</b>{" "} you made when you moved in. 
+              Landlords are quick to claim that deposit if every inch of the premises is not in  <b className="purple"> {" "} mint condition</b>{" "}
+              <br/>
+              <br/>   
               </p>
-              <br/>
-              <br/>
               <Button onClick={navigateBookNow} style={{ width: "500px" }} >
               <FaReceipt />
                 &nbsp; Free Estimate  
