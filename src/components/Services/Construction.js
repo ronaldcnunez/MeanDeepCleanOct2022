@@ -1,17 +1,22 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button} from "react-bootstrap";
 import Particle from "../Particle";
 import {
   AiFillInstagram,
   AiFillFacebook,
   AiOutlineGoogle
 } from "react-icons/ai";
-import { FaTiktok } from 'react-icons/fa';
+import { FaTiktok, FaReceipt } from 'react-icons/fa';
 import Typewriter from "typewriter-effect";
+import { useNavigate } from "react-router-dom";
 
 
 function ConstructionServices() {
+  let navigate = useNavigate();
 
+  const navigateBookNow = () => {
+    navigate('/booknow');
+  };
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -67,6 +72,12 @@ function ConstructionServices() {
              
             <b className="purple"> {" "} Mean Deep Clean </b>
               is NJ's and NYC's most trusted post construction cleaning. With over<b className="purple"> {" "} 700 post construction cleanings </b> we have the experience and staff needed.             </p>
+              <br/>
+              <br/>
+              <Button onClick={navigateBookNow} style={{ width: "500px" }} >
+              <FaReceipt />
+                &nbsp; Free Estimate  
+            </Button>
           </Col>
         </Row>
         <Row>

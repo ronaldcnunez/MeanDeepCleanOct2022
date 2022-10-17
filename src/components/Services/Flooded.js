@@ -1,16 +1,23 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button} from "react-bootstrap";
 import Particle from "../Particle";
 import {
   AiFillInstagram,
   AiFillFacebook,
   AiOutlineGoogle
 } from "react-icons/ai";
-import { FaTiktok } from 'react-icons/fa';
+import { FaTiktok, FaReceipt } from 'react-icons/fa';
 import Typewriter from "typewriter-effect";
+import { useNavigate } from "react-router-dom";
+
 
 
 function FloodedServices() {
+  let navigate = useNavigate();
+
+  const navigateBookNow = () => {
+    navigate('/booknow');
+  };
 
   return (
     <section>
@@ -70,6 +77,10 @@ function FloodedServices() {
               <br />
               <br /> 
             </p>
+            <Button onClick={navigateBookNow} style={{ width: "500px" }} >
+              <FaReceipt />
+                &nbsp; Free Estimate  
+            </Button>
           </Col>
         </Row>
         <Row>

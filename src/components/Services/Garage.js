@@ -1,16 +1,24 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button} from "react-bootstrap";
 import Particle from "../Particle";
 import {
   AiFillInstagram,
   AiFillFacebook,
   AiOutlineGoogle
 } from "react-icons/ai";
-import { FaTiktok } from 'react-icons/fa';
+import { FaTiktok, FaReceipt } from 'react-icons/fa';
 import Typewriter from "typewriter-effect";
+import { useNavigate } from "react-router-dom";
+
 
 
 function GarageServices() {
+  let navigate = useNavigate();
+
+  const navigateBookNow = () => {
+    navigate('/booknow');
+  };
+
 
   return (
     <section>
@@ -65,7 +73,7 @@ function GarageServices() {
                 and make sure your home is transformed into a spotless place. 
               They systematically review the space, develop a strategy to perform the job and waste no time in 
               <b className="purple"> {" "} removing dirt, sanitizing, vacuuming, Swiffering and cleaning </b>
-               areas that never receive attention.  
+               areas that never receive attention.
               <br />
               <br /> 
               Every regular cleaning includes {" "} 
@@ -105,6 +113,12 @@ function GarageServices() {
                 {" "} services. {" "}
               </i>
             </p>
+            <br/>
+              <br/>
+              <Button onClick={navigateBookNow} style={{ width: "500px" }} >
+              <FaReceipt />
+                &nbsp; Free Estimate  
+            </Button>
           </Col>
         </Row>
         <Row>
