@@ -15,7 +15,6 @@ import MoveIn from "./components/Services/Moving";
 import MoveOut from "./components/Services/Moving";
 import Party from "./components/Services/Party";
 import Pets from "./components/Services/Pets";
-
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import {
@@ -63,8 +62,6 @@ function App() {
           <Route path="/partycleanup" element={<Party />} />
           <Route path="/petcleanings" element={<Pets />} />
           <Route path="/cabinetcleanings" element={<Cabinet />} />
-
-
         </Routes>
         <Footer />
       </div>
